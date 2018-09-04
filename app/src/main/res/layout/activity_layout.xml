@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gxz.PagerSlidingTabStrip
+        android:layout_centerHorizontal="true"
+        android:background="#1B1B2D"
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:textColor="#80FFFFFF"
+        app:pstsScaleZoomMax="0.125"
+        android:textSize="40px"
+        app:pstsIndicatorHeight="0px"
+        app:pstsTabPaddingLeftRight="45px"
+        app:pstsUnderlineHeight="0px"
+        app:pstsShouldExpand="false"
+        app:pstsTextSelectedColor="@android:color/white"
+         />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs" />
+
+
+</RelativeLayout>
